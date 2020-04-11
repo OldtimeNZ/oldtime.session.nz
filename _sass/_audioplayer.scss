@@ -1,0 +1,461 @@
+.audioParentOuter {
+    display: inline-flex;
+}
+
+.audioParentInner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.audioChildOuter {
+    flex: 1 auto;
+}
+
+.audioChildInner {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mp3AudioControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 28px;
+    float: left;
+}
+
+.mp3LoopControl {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 180px;
+    float: left;
+}
+
+.mp3SpeedControl {
+    width: 100%;
+    min-width: 200px;
+    margin-top: 28px;
+    float: left;
+}
+
+.abcAudioControl {
+    width: 100%;
+    min-width: 200px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.abcSpeedControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    float: left;
+}
+
+.playButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url("/images/play.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 0;
+    outline: none;
+}
+
+.pauseButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url("/images/pause.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 0;
+    outline: none;
+}
+
+.stopButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url("/images/stop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 0;
+    outline: none;
+}
+
+p.audioLabel {
+    clear: left;
+    font-size: small;
+    text-align: center;
+}
+
+p.mp3SpeedLabel {
+    margin-top: 24px;
+    clear: left;
+    font-size: small;
+    text-align: center;
+}
+
+p.attribution {
+    max-width: 650px;
+}
+
+.tuneTitle {
+    font-size: 110%;
+}
+
+.player audio {
+    width: 70%;
+}
+
+.abctext {
+    display: none;
+}
+
+.loopButton {
+    background-color: lighten($brand-color, 40%);
+    background: linear-gradient($Loopbutton-color1, $Loopbutton-color2);
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 75%;
+}
+
+.filterButton {
+    background-color: $brand-color;
+    padding: 5px 10px;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 75%;
+}
+
+.filterButton.filterDisabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.sep {
+    border-bottom: 1px solid black;
+}
+
+.sep td {
+    padding-bottom: 5px;
+}
+
+h2 span {
+    display:inline;
+}
+
+fieldset {
+    max-width: 565px;
+    float:left;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+.fieldset-auto-width {
+    min-width: 300px;
+    max-width: 565px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.fieldset-covid {
+  margin-bottom: 1rem;
+}
+
+.tableParent {
+    display: flex;
+    width: 100%;
+}
+
+.tableChild {
+    padding: 0rem;
+}
+
+.formParent {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.formChild {
+    flex: 1;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+form {
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    border-radius: 8px;
+}
+
+th {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    text-align: center;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+}
+
+th:first-of-type {
+    border-top-left-radius: 8px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 8px;
+}
+
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 8px;
+}
+
+.tdArchive {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-of-type(odd) {
+    background-color: darken($complimentary-color, 6%);
+}
+
+tr:hover {
+    background-color: darken($complimentary-color, 12%);
+}
+
+tr#no_hover:hover {
+    background-color: transparent;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 50%;
+    background: #a0a0a0;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+// The slider handle (use -webkit- (Chrome, Opera, Safari, Edge)
+// and -moz- (Firefox) to override default look)
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    // adjust width of control button
+    width: 15px;
+    // adjust height of control button
+    height: 20px;
+    border-radius: 50%;
+    background: darken($brand-color, 20%);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    // adjust width of control button
+    width: 15px;
+    // adjust height of control button
+    height: 20px;
+    border-radius: 50%;
+    background: darken($brand-color, 20%);
+    cursor: pointer;
+}
+
+.upButton {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    padding: 1px;
+    text-align: center;
+    font-size: 90%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.downButton {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    padding: 1px;
+    text-align: center;
+    font-size: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.loopClass {
+    font-size: 14px;
+    border-radius: 2px;
+    width: 45px;
+}
+
+//if the tunesTable height is 320px we can get 10 tunes in the table and no
+// need for a tableSlider
+.tunesTable{
+  height: 320px;
+  width: 565px;
+  overflow: auto;
+}
+
+// height + margin-top + margin-bottom = tunesTable.height
+.tableSlider {
+    height: 270px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding:  0;
+}
+
+.tuneSelect {
+  height: 100%;
+  overflow-y: scroll;
+  display: block;
+  border: 2px solid $complimentary-color;
+  border-radius: 8px;
+  margin-right: -15px; /* maximum width of scrollbar */
+  //padding-right: 12px; /* maximum width of scrollbar */
+  font-size: 14px;
+  min-width: 300px;
+}
+
+.outputABC {
+    max-width: 650px;
+}
+
+.loop-container {
+    max-width: 625px;
+    padding-left: 20px;
+    display: block;
+    border: 2px solid $complimentary-color;
+    //width: 75%;
+}
+
+.row-title {
+    color: darken($complimentary-color, 10%);
+    background-color: $brand-color;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.row-odd {
+    //background-color: lighten($brand-color, 40%);
+    background-color: darken($complimentary-color, 10%);
+}
+
+.a {
+    color: #f0f0f0;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.featurePicture {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-right: 1rem;
+    padding: 10px;
+    width: 400px;
+    float: left;
+}
+
+.licenceUsed {
+    overflow-y: scroll;
+     height: 200px;
+     border: 1px solid black;
+     border-radius: 8px;
+     margin: 10px;
+     padding: 10px;
+}
