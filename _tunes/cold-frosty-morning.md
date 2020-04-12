@@ -6,7 +6,7 @@ rhythm:
 notes:
 date: 2020-04-12
 location:
-tags: cm
+tags: 
 repeats:
 parts:
 regtuneoftheweek:
