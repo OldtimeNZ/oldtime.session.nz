@@ -1,8 +1,11 @@
 - title: "home"
   href: "/"
 
-- title: "Tunes"
+- title: "Tunes Archive"
   href: "/tunes_archive/"
+
+- title: "Latest Tunes"
+  href: "/latest"
 
 - title: "Toolbox"
   href: "/toolbox/"
