@@ -42,15 +42,15 @@ permalink: /blog/:year/:title
 
 #### SEO Stuff
 # Google Analytics
-google_universal_analytics: UA-77351761-1
+google_universal_analytics: UA-163465091-1
 google_universal_analytics_cookiedomain: auto
 
 # Facebook Opengraph
-facebook_user: WellingtonSession
+facebook_user: otminz
 # default FB id
-facebook_app_id: 966242223397117
+facebook_app_id: 
 facebook_locale: en_US
-facebook_page: https://www.facebook.com/groups/WellingtonSession/
+facebook_page: https://www.facebook.com/groups/otminz/
 facebook_image: /images/pubscene-small.jpg
 
 # Twitter Cards
