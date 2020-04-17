@@ -6,7 +6,7 @@ import re
 import os
 import html
 
-archiveName = 'wellington.session.nz'
+archiveName = 'oldtime.session.nz'
 
 #
 # You will need to change these variables to
@@ -48,11 +48,6 @@ with open(optionsFile, 'w') as outfile:
                         rhythm = line.replace('rhythm:', '').strip()
                         if rhythm:
                             rhythmDict[cleanhtml(rhythm.replace('"', ''))] = rhythm
-                    if line.startswith('location:'):
-                        locations = line.replace('location:', '').strip()
-                        if locations:
-                            for location in locations.split():
-                                locationDict[cleanhtml(location.replace('"', ''))] = location
                     if line.startswith('mp3_source:'):
                         mp3_source = line.replace('mp3_source:', '').strip()
                         if mp3_source:
@@ -64,10 +59,6 @@ with open(optionsFile, 'w') as outfile:
                         if mp3_licence:
                             mp3_licence_key = cleanhtml(mp3_licence.replace('"', ''))
                             mp3licenceDict[mp3_licence_key] = mp3_licence
-                    if line.startswith('source:'):
-                        source = line.replace('source:', '').strip()
-                        if source:
-                            sourceDict[cleanhtml(source.replace('"', ''))] = source
                     if line.startswith('abc_source:'):
                         abc_source = line.replace('abc_source:', '').strip()
                         if abc_source:
@@ -114,13 +105,7 @@ with open(optionsFile, 'w') as outfile:
     <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
     <input type="hidden" id="tags-box" name="tags" value="">
 
-    <br /><label>Location:</label><br />\n""")
-
-    for key in sorted(locationDict.keys()):
-        outfile.write('        <input name="location" type="checkbox" value="' + key + '"/>\n');
-        outfile.write('        <label for="location">' + key + '</label><br />\n');
-
-    outfile.write("""<br />
+    <br />
 
     <h3>Recorded version of the tune</h3>
 
@@ -134,6 +119,7 @@ with open(optionsFile, 'w') as outfile:
 
     <p>If an MP3 version of the tune is available, please provide these details:</p>
 
+    <!--
     <label>Repeats:</label>
     <input type="text" id="repeats-box" name="repeats" value="">
     <br />
@@ -141,7 +127,7 @@ with open(optionsFile, 'w') as outfile:
     <label>Parts:</label>
     <input type="text" id="parts-box" name="parts" value="">
     <br />
-
+    -->
     <label>MP3 source:</label>
     <select id="mp3_source-box" name="mp3_source">
     <option value="">None</option>
@@ -177,17 +163,6 @@ with open(optionsFile, 'w') as outfile:
 
     <label>Alternative MP3 url:</label>
     <input type="text" id="alt_mp3_url-box" name="alt_mp3_url" value="">
-
-    <label>Source:<sup>*</sup></label>
-    <select id="source-box" name="source">
-    <option value="Wellington">Wellington</option>
-    """)
-    for key in sorted(sourceDict.keys()):
-        if 'Wellington' in key:
-            break
-        outfile.write('    <option value="' + html.escape(sourceDict[key], quote=True) + '">' + key + '</option>\n')
-    outfile.write("""    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
-    </select>
 
     <p></p>
 
