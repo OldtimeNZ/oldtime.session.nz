@@ -336,7 +336,7 @@ tr#no_hover:hover {
 // need for a tableSlider
 .tunesTable{
   height: 320px;
-  width: 565px;
+  width: 455px;
   overflow: auto;
 }
 
@@ -351,7 +351,7 @@ tr#no_hover:hover {
 
 .tuneSelect {
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   display: block;
   border: 2px solid $complimentary-color;
   border-radius: 8px;
