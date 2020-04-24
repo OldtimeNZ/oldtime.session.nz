@@ -1,0 +1,99 @@
+<!-- This code was auto-generated using the script: -->
+<!-- mk_createMD_options.py -->
+<!-- Any changes WILL be overwritten! -->
+
+<form id="createMD" method="get">
+    <label>Title:<sup>*</sup></label>
+    <input type="text" id="title-box" name="title" value="">
+
+    <input type="hidden" id="titleID-box" name="titleID" value=""><br />
+
+    <label>Key:<sup>*</sup></label>
+    <input type="text" id="key-box" name="key" value="">
+
+    <label>Rhythm:<sup>*</sup></label>
+    <select id="rhythm-box" name="rhythm">
+        <option value="">None</option>
+        <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
+    </select>
+
+    <label>Notes:</label>
+    <input type="text" id="notes-box" name="notes" value="">
+
+    <input type="hidden" id="date-box" name="date" value=""><br />
+    <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
+    <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
+    <input type="hidden" id="tags-box" name="tags" value="">
+
+    <br />
+
+    <h3>Recorded version of the tune</h3>
+
+    <label>MP3 file:</label>
+    <select id="mp3_file-box" name="mp3_file">
+        <option value="yes">Available</option>
+        <option value="no">Not available</option>
+    </select>
+
+    <p></p>
+
+    <p>If an MP3 version of the tune is available, please provide these details:</p>
+
+    <!--
+    <label>Repeats:</label>
+    <input type="text" id="repeats-box" name="repeats" value="">
+    <br />
+
+    <label>Parts:</label>
+    <input type="text" id="parts-box" name="parts" value="">
+    <br />
+    -->
+    <label>MP3 source:</label>
+    <select id="mp3_source-box" name="mp3_source">
+    <option value="">None</option>
+        <option value="&lt;a href=&quot;https://www.georgejacksonmusic.com/&quot;&gt;George Jackson&lt;/a&gt;">George Jackson</option>
+    <option value="&lt;a href=&quot;https://www.youtube.com/user/katiehendersonfiddle&quot;&gt;Katy Davis Henderson&lt;/a&gt;">Katy Davis Henderson</option>
+    <option value="ENTER YOUR NEW MP3 SOURCE HERE">Other</option>
+    </select>
+
+    <div class="licenceUsed">
+    <h3>Licences Used</h3>
+    <p><small><strong>George Jackson</strong> uses these licences:<br />
+© George Jackson. All Rights Reserved. </small></p>
+<p><small><strong>Katy Davis Henderson</strong> uses these licences:<br />
+© Katy Davis Henderson. All Rights Reserved. </small></p>
+
+    </div>
+    <label>MP3 licence:</label>
+    <select id="mp3_licence-box" name="mp3_licence">
+        <option value="">None</option>
+        <option value="&quot;© George Jackson. All Rights Reserved.&quot;">© George Jackson. All Rights Reserved.</option>
+    <option value="&quot;© Katy Davis Henderson. All Rights Reserved.&quot;">© Katy Davis Henderson. All Rights Reserved.</option>
+    <option value="ENTER YOUR NEW MP3 LICENCE HERE">Other</option>
+    </select>
+
+    <label>MP3 url:</label>
+    <input type="text" id="mp3_url-box" name="mp3_url" value="">
+
+    <label>Alternative MP3 url:</label>
+    <input type="text" id="alt_mp3_url-box" name="alt_mp3_url" value="">
+
+    <p></p>
+
+    <h3>ABC version of the tune</h3>
+
+    <label>ABC source:</label>
+    <select id="abc_source-box" name="abc_source">
+    <option value="The Session">The Session</option>
+        <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
+    </select>
+
+    <label>ABC url:</label>
+    <input type="text" id="abc_url-box" name="abc_url" value="">
+
+    <label>ABC:<sup>*</sup></label>
+    <textarea id="abc-box" name="abc" rows="13" cols="58" style="background-color: #ebebeb" spellcheck="false"></textarea>
+
+    <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Show MD File">
+    </form>
+    <!-- End of mk_createMD_options.py code -->
