@@ -55,19 +55,17 @@ Once you've pushed updates to the **Branch: master** these changes need to be in
 
 Using the website:
 
- * <https://github.com/OldtimeNZ/oldtime.session.nz>
+ * <https://github.com/OldTimeNZ/oldtime.session.nz/compare/gh-pages...master?expand=1>
+ 
+ * You should see a page entitled **Open a pull request**
 
- you can issue a **Pull** request to get the changes from the **master** branch into the **gh-pages** branch.
-
-  * Select the button **New pull request**
-  * You should now see a screen headed **Compare changes**
-  * Set *base:* to **gh-pages** and *compare:* to **master**
-    * **Make sure you get these in the right order otherwise you'll downgrade the master branch to be the same as the gh-pages branch**
-  * If you're happy that the changes should be committed to the live website, press **Create pull request**
+    * If you're happy that the changes should be committed to the live website, press **Create pull request**
     * You should see a message like: *asjl  wants to merge 1 commit into gh-pages from master*
-  * Choose **Merge pull request** and then **Confirm Merge**
+    * Choose **Merge pull request** and then **Confirm Merge**
     * You should see a message like: *asjl  merged 1 commit into gh-pages from master 12 seconds ago*
-  * Check the website <https://oldtime.session.nz/> to make sure the changes are correct.
+    * Check the website <https://oldtime.session.nz/> to make sure the changes are correct.
+
+  * If you see a page entitled **Comparing changes** and a message saying, *There isn’t anything to compare*, then you should check that you've committed and pushed your changes from your local machine to GitHub.
 
 Open source
 -----------
